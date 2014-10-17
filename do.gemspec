@@ -14,10 +14,7 @@ Gem::Specification.new do |gem|
   gem.name          = "do"
   gem.require_paths = ['lib']
   gem.version       = DO::VERSION
-  gem.add_dependency "net-ssh",  "~>2.2.0"
-  gem.add_dependency "net-sftp", "~>2.0.5"
+  gem.add_dependency "net-ssh",  ">2.2.0"
+  gem.add_dependency "net-sftp", ">2.0.5"
 
-  gem.post_install_message  = "\e[32m" + ("*" * 60) + "\n"
-  gem.post_install_message += "*" + "DO - IT! $ doit setup".center(58) + "*" + "\n"
-  gem.post_install_message += ("*" * 60) + "\n\e[0m"
 end
